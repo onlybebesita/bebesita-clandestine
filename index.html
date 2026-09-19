@@ -53,6 +53,17 @@
             box-shadow: 0 0 15px #00ff66;
             cursor: pointer;
         }
+        .btn-copy {
+            border: 1px dashed #00ff66;
+            color: #888888;
+            font-size: 14px;
+            padding: 10px 15px;
+        }
+        .btn-copy:hover {
+            background: #222;
+            color: #00ff66;
+            box-shadow: none;
+        }
         .terminal-text {
             text-align: left;
             display: inline-block;
@@ -64,7 +75,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>//SITIO CLANDESTINO DE DISTRIBUCIÓN//</h1>
+        <h1>// SITIO CLANDESTINO DE DISTRIBUCIÓN //</h1>
         <div class="warning">[ ADVERTENCIA: SOFTWARE SMUGGLING ]</div>
         
         <div class="terminal-text">
@@ -75,15 +86,41 @@
             $ ready to sideload...
         </div>
 
-        <p style="margin: 20px 0;">Selecciona el protocolo de inyección para tu dispositivo:</p>
+        <p style="margin: 20px 0;">Selecciona el protocolo de inyección:</p>
         
-        <!-- Enlaces mágicos automatizados para AltStore y SideStore -->
+        <!-- Enlaces mágicos automatizados -->
         <a class="btn" href="altstore://source?url=https://github.io">> INYECTAR EN ALTSTORE</a>
         <a class="btn" href="sidestore://source?url=https://github.io">> INYECTAR EN SIDESTORE</a>
+        
+        <p style="margin: 30px 0 10px 0;">¿Usas otro Sideloader? Copia la fuente:</p>
+        
+        <!-- Botón de copiar interactivo -->
+        <button class="btn btn-copy" id="copyBtn" onclick="copiarRepo()">> COPIAR URL DEL REPO</button>
         
         <div style="margin-top: 40px; font-size: 11px; color: #444444;">
             Criptografía de origen: https://github.io
         </div>
     </div>
+
+    <script>
+        function copiarRepo() {
+            var urlRepo = "https://github.io";
+            
+            navigator.clipboard.writeText(urlRepo).then(function() {
+                var btn = document.getElementById("copyBtn");
+                btn.innerText = "[ ¡URL COPIADA AL PORTAPAPELES! ]";
+                btn.style.color = "#00ff66";
+                btn.style.borderColor = "#00ff66";
+                
+                setTimeout(function() {
+                    btn.innerText = "> COPIAR URL DEL REPO";
+                    btn.style.color = "#888888";
+                    btn.style.borderColor = "#00ff66";
+                }, 2000);
+            }).catch(function(err) {
+                alert("Error al copiar. Copia esto a mano: " + urlRepo);
+            });
+        }
+    </script>
 </body>
 </html>
