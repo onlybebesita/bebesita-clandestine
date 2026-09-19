@@ -1,0 +1,17 @@
+{
+  "name": "Clandestine site",
+  "identifier": "com.onlybebesita.clandestine",
+  "sourceURL": "https://github.io",
+  "apps": [
+    {
+      "name": "Spotify Glass",
+      "bundleIdentifier": "com.spotify.client",
+      "developerName": "Eevee & Glass",
+      "version": "9.1.78",
+      "versionDate": "2026-09-19",
+      "downloadURL": "https://github.com/onlybebesita/bebesita-clandestine/releases/download/ukn/bebesita.spoti.ipa.zip",
+      "localizedDescription": "The bebesita glass.",
+      "iconURL": "https://githubusercontent.com"
+    }
+  ]
+}
