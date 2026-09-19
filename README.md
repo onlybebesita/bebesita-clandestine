@@ -1,5 +1,6 @@
 # 👁️ // BEBESITA-CLANDESTINE //
 
+```text
   ____  _                     _                     
 
  |  _ \| |                   | |                    
@@ -7,7 +8,8 @@
  |  _ <| |/ _` |/ _ \/ _ \/ _` |/ _ \ '_ \/ __|/ _ \
  | |_) | | (_| |  __/  __/ (_| |  __/ | | \__ \  __/
  |____/|_|\__,_|\___|\___|\__,_|\___|_| |_|___/\___|
-                                                    
+```
+                                                
 ### [ ADVERTENCIA: CONTENEDOR DE SOFTWARE SMUGGLING OPEN SOURCE ]
 
 Este repositorio funciona como un **servidor de distribución descentralizado y clandestino** para saltarse las restricciones comerciales de las aplicaciones multimedia en iOS. 
